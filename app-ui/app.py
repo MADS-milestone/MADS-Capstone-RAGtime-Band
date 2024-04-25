@@ -74,7 +74,7 @@ if "current_trial" not in st.session_state or st.session_state.current_trial is 
             trial = st.selectbox(label="Please select one from the dropdown list below you would like to find out more about",
                              options=st.session_state.res_for_condition)
             profile = st.selectbox(label="Select the profile that best describes you",
-                               options=["General/layperson", "PhD scientist", "5-year old child"])
+                               options=["General/layperson", "PhD scientist", "5-year-old child"])
             confirmed = st.form_submit_button("Confirm")
             if confirmed:
                 set_trial(trial, profile)
